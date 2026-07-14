@@ -11,8 +11,20 @@ struct Profile: View {
     var body: some View {
         NavigationStack {
             VStack {
-                Text("Perfil de usuario")
+                Text ("Giovanny Canchi")
+                    .font(.title)
+                Image(uiImage: .imageNotFound)
+                    .resizable()
+                    .scaledToFit()
+                Text("gio-canhi-3driod")
+                    .font(.headline)
+                    .padding(.top)
+                
+                Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+                    .font(.caption)
+                    .padding(.top)
             }
+            .padding()
             .navigationTitle("Perfil")
         }
     }
